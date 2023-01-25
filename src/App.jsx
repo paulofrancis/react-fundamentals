@@ -9,6 +9,7 @@ import Card from "./components/layout/Card";
 import Family from './components/basic/Family';
 import FamilyMember from './components/basic/FamilyMember';
 import StudentList from './components/repetition/StudentList';
+import ProductsTable from './components/repetition/ProductsTable';
 
 export default _ =>
     <div className='app'>
@@ -16,6 +17,10 @@ export default _ =>
         <h3>Classes</h3>
 
         <div className="cards">
+
+            <Card title='#08 Repetition Challenge' color='#fe9c8f  '>
+                <ProductsTable></ProductsTable>
+            </Card>
 
             <Card title='#07 Repetition' color='#f6cd61 '>
                 <StudentList></StudentList>
