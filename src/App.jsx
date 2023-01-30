@@ -10,6 +10,8 @@ import Family from './components/basic/Family';
 import FamilyMember from './components/basic/FamilyMember';
 import StudentList from './components/repetition/StudentList';
 import ProductsTable from './components/repetition/ProductsTable';
+import EvenOrOdd from './components/condition/EvenOrOdd';
+import UserInfo from './components/condition/UserInfo';
 
 export default _ =>
     <div className='app'>
@@ -17,6 +19,13 @@ export default _ =>
         <h3>Classes</h3>
 
         <div className="cards">
+
+            <Card title='#09 Conditional render' color='#eee3e7'>
+                <EvenOrOdd number={20}></EvenOrOdd>
+                <UserInfo user={{ name: 'Fernando' }}></UserInfo>
+                <UserInfo user={{}}></UserInfo>
+                <UserInfo />
+            </Card>
 
             <Card title='#08 Repetition Challenge' color='#fe9c8f  '>
                 <ProductsTable></ProductsTable>
