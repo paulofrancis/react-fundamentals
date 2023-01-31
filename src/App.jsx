@@ -12,6 +12,9 @@ import StudentList from './components/repetition/StudentList';
 import ProductsTable from './components/repetition/ProductsTable';
 import EvenOrOdd from './components/condition/EvenOrOdd';
 import UserInfo from './components/condition/UserInfo';
+import DirectParent from './components/comunication/DirectParent';
+import IndirectParent from './components/comunication/IndirectParent';
+import Input from './components/form/Input';
 
 export default _ =>
     <div className='app'>
@@ -20,6 +23,18 @@ export default _ =>
 
         <div className="cards">
 
+            <Card title='#12 Controlled Component' color='#ee4035'>
+                <Input></Input>
+            </Card>
+
+            <Card title='#11 Indirect Comunication' color='#0392cf'>
+                <IndirectParent></IndirectParent>
+            </Card>
+
+            <Card title='#10 Direct Comunication' color='#fdf498'>
+                <DirectParent></DirectParent>
+            </Card>
+
             <Card title='#09 Conditional render' color='#eee3e7'>
                 <EvenOrOdd number={20}></EvenOrOdd>
                 <UserInfo user={{ name: 'Fernando' }}></UserInfo>
@@ -27,7 +42,7 @@ export default _ =>
                 <UserInfo />
             </Card>
 
-            <Card title='#08 Repetition Challenge' color='#fe9c8f  '>
+            <Card title='#08 Repetition Challenge' color='#fe9c8f'>
                 <ProductsTable></ProductsTable>
             </Card>
 
