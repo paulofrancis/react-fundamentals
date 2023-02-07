@@ -15,6 +15,8 @@ import UserInfo from './components/condition/UserInfo';
 import DirectParent from './components/comunication/DirectParent';
 import IndirectParent from './components/comunication/IndirectParent';
 import Input from './components/form/Input';
+import Counter from './components/counter/Counter';
+import Lottery from './components/lottery/Lottery';
 
 export default _ =>
     <div className='app'>
@@ -22,6 +24,14 @@ export default _ =>
         <h3>Classes</h3>
 
         <div className="cards">
+
+            <Card title='#14 Loterry' color='#96ceb4'>
+                <Lottery quantity={7}></Lottery>
+            </Card>
+
+            <Card title='#13 Counter' color='#1e1f26'>
+                <Counter numberInit={10}></Counter>
+            </Card>
 
             <Card title='#12 Controlled Component' color='#ee4035'>
                 <Input></Input>
