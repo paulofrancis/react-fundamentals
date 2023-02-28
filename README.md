@@ -1,5 +1,8 @@
 # React Fundamentals
 
+### Udemy course
+https://www.udemy.com/course/react-redux-pt/
+
 ### Components Page
 
 ![Components page](fundamentals.png)
